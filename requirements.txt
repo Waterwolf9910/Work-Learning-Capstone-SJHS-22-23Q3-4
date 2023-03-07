@@ -1,2 +1,3 @@
 adafruit_crickit
 gpiozero
+adafruit-circuitpython-matrixkeypad
