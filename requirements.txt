@@ -1,3 +1,5 @@
 adafruit_crickit
-gpiozero
 adafruit-circuitpython-matrixkeypad
+adafruit-circuitpython-charlcd
+rpi_lcd
+# gpiozero
