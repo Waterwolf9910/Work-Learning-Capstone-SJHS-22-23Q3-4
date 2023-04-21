@@ -3,7 +3,7 @@ import adafruit_matrixkeypad as matrixkeypad
 import adafruit_character_lcd.character_lcd_i2c as character_lcd
 import sense_hat
 import time
-import rpi_lcd
+# import rpi_lcd
 import busio
 import digitalio
 import board
@@ -15,7 +15,8 @@ sense = sense_hat.SenseHat()
 # lcd = rpi_lcd.LCD(0x27, 1, 16, 2)
 lcd_cols = 16
 lcd_rows = 2
-lcd = character_lcd.Character_LCD_I2C(board.I2C(board.SCL, board.SDA), 16, 2, 0x27)
+lcd = character_lcd.Character_LCD_I2C(busio.I2C(board.SCL, board.SDA), lcd_cols, lcd_rows, 0x20)
+
 class Direction(enum.Enum):
     LEFT = enum.auto()
     CENTER = enum.auto()
