@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            "preLaunchTask": "Build",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "cwd": "${workspaceFolder}/js/controller/build",
+            "program": "${workspaceFolder}/js/controller/build/index.js",
+            "serverReadyAction":{
+                "action": "startDebugging",
+                "name": "Launch Browser",
+                "killOnServerStop": false,
+                "pattern": "[Ll]istening on port ([0-9]+)"
+            }
+            // "outFiles": [
+            //     "${workspaceFolder}/**/*.js"
+            // ]
+        },
+        {
+            "request": "launch",
+            "name": "Launch Browser",
+            "type": "msedge",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/js/controller/static_src/",
+            "outFiles": [
+                "${workspaceFolder}/controller/js/**/*.js",
+                "!**/node_modules/**"
+            ],
+            // "resolveSourceMapLocations": ["${workspaceFolder}/js/controller/static_src"],
+            // "address": "127.0.0.1:3000",
+            "cleanUp": "onlyTab",
+            "perScriptSourcemaps": "auto",
+            "showAsyncStacks": true,
+            "sourceMaps": true
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "command": "yarn",
+            "options": {
+                "cwd": "${workspaceFolder}/js/controller"
+            },
+            "args": [
+                "tsc"
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            },
+
+        }
+    ]
+}

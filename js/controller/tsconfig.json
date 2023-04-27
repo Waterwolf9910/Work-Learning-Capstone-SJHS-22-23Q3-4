@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "module": "CommonJS",
+        "resolveJsonModule": true,
+        "moduleResolution": "nodenext",
+        "target": "ES6",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "outDir": "./build",
+        "rootDir": "./src"
+    },
+    "include": ["./src/**/*"]
+}

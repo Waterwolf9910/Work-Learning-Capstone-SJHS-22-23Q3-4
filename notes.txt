@@ -1,0 +1,5 @@
+Communicate between python and nodejs
+https://websockets.readthedocs.io/en/stable/
+https://websockets.readthedocs.io/en/stable/intro/tutorial1.html
+https://www.npmjs.com/package/express-ws
+
