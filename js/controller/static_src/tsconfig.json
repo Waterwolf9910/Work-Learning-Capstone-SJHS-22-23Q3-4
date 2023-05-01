@@ -2,8 +2,14 @@
     "compilerOptions": {
         "rootDir": "js",
         "lib": ["DOM"],
-        "jsx": "react-jsx",
+        "jsx": "react-jsxdev",
+        "strict": true,
+        "sourceMap": true,
+        "target": "ES6",
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        // "moduleResolution": "bundler",
+        // "reactNamespace": "react",
         "resolveJsonModule": true
-        // "reactNamespace": "react"
     }
 }

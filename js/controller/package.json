@@ -27,6 +27,7 @@
     "webpack-hot-middleware": "^2.25.3"
   },
   "dependencies": {
+    "bufferutil": "^4.0.7",
     "express": "^4.18.2",
     "express-ws": "^5.0.2",
     "react": "^18.2.0",

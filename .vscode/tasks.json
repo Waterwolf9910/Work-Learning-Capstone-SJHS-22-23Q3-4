@@ -6,11 +6,11 @@
             "command": "yarn",
             "options": {
                 "cwd": "${workspaceFolder}/js/controller"
-            },
+            },            
             "args": [
                 "tsc"
             ],
-            "type": "process",
+            "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true

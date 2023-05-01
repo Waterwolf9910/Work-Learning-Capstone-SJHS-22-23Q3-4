@@ -22,7 +22,7 @@
             "serverReadyAction":{
                 "action": "startDebugging",
                 "name": "Launch Browser",
-                "killOnServerStop": false,
+                "killOnServerStop": true,
                 "pattern": "[Ll]istening on port ([0-9]+)"
             }
             // "outFiles": [

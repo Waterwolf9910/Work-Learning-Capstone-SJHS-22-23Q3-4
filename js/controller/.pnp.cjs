@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", "npm:5.28.1"],\
             ["@types/webpack-env", "npm:1.18.0"],\
             ["@types/webpack-hot-middleware", "npm:2.25.6"],\
+            ["bufferutil", "npm:4.0.7"],\
             ["css-loader", "virtual:727d0be13385f1107faa213567a8a587de8ffbe0c8c194042a01a2ad4e991afe8190a0e07ff847e31a5ce5ea44717b6cee2702ce5fa964d5bbc5f56d114d688b#npm:6.7.3"],\
             ["express", "npm:4.18.2"],\
             ["express-ws", "virtual:727d0be13385f1107faa213567a8a587de8ffbe0c8c194042a01a2ad4e991afe8190a0e07ff847e31a5ce5ea44717b6cee2702ce5fa964d5bbc5f56d114d688b#npm:5.0.2"],\
@@ -822,6 +823,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", "npm:5.28.1"],\
             ["@types/webpack-env", "npm:1.18.0"],\
             ["@types/webpack-hot-middleware", "npm:2.25.6"],\
+            ["bufferutil", "npm:4.0.7"],\
             ["css-loader", "virtual:727d0be13385f1107faa213567a8a587de8ffbe0c8c194042a01a2ad4e991afe8190a0e07ff847e31a5ce5ea44717b6cee2702ce5fa964d5bbc5f56d114d688b#npm:6.7.3"],\
             ["express", "npm:4.18.2"],\
             ["express-ws", "virtual:727d0be13385f1107faa213567a8a587de8ffbe0c8c194042a01a2ad4e991afe8190a0e07ff847e31a5ce5ea44717b6cee2702ce5fa964d5bbc5f56d114d688b#npm:5.0.2"],\
@@ -1218,6 +1220,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/buffer-from-npm-1.1.2-03d2f20d7e-0448524a56.zip/node_modules/buffer-from/",\
           "packageDependencies": [\
             ["buffer-from", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["bufferutil", [\
+        ["npm:4.0.7", {\
+          "packageLocation": "./.yarn/unplugged/bufferutil-npm-4.0.7-77a45bb7a3/node_modules/bufferutil/",\
+          "packageDependencies": [\
+            ["bufferutil", "npm:4.0.7"],\
+            ["node-gyp", "npm:9.3.1"],\
+            ["node-gyp-build", "npm:4.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3471,6 +3484,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.5.0"],\
             ["tar", "npm:6.1.13"],\
             ["which", "npm:2.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["node-gyp-build", [\
+        ["npm:4.6.0", {\
+          "packageLocation": "./.yarn/cache/node-gyp-build-npm-4.6.0-5434aac3e5-25d78c5ef1.zip/node_modules/node-gyp-build/",\
+          "packageDependencies": [\
+            ["node-gyp-build", "npm:4.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\

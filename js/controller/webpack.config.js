@@ -33,7 +33,6 @@ let config = {
     devtool: isDev ? 'inline-source-map' : false,
     mode: isDev ? "development" : "production",
     output: {
-        // filename: "bundle.js",
         path: path.resolve(__dirname, "build/static")
     },
     module: {
@@ -117,9 +116,6 @@ let config = {
         mangleExports: 'deterministic'
     },
     target: ["web"]
-    // plugins: [
-    //     (() => isDev ? [] : undefined)()
-    // ].filter(v => typeof v != "boolean" && v != undefined)
 }
 
 module.exports = config

@@ -1,30 +1,13 @@
-let pushState = history.pushState
+/* let pushState = history.pushState
 history.pushState = (data, unused: string, url?: string | URL) => {
+    statePushedListeners.forEach(async v => v())
     return pushState(data, unused, url)
 }
 
 type stateListener = () => any
-let statePushedListener: stateListener[] = []
+let statePushedListeners: stateListener[] = []
 
-let pse = (e: PopStateEvent) => {
-    let state: {
-        title: string
-        url: string
-        data: {}
-    } = e.state
-    if (state) {
-        document.title = state.title
-        window.state_data = state.data
-    }
-}
-
-window.addEventListener("onStateChange", () => {})
-
-window.addEventListener("popstate", pse)
-if (module.hot) {
-    module.hot.addDisposeHandler(() => {
-        console.log("HMR Cleanup")
-        window.removeEventListener("popstate", pse)
-    })
-    console.log("Hello")
-}
+export = {
+    addStatePushListener: (listener: () => any) => { statePushedListeners.push(listener) },
+    removeStatePushListener: (listener: () => any) => { statePushedListeners = statePushedListeners.filter(v => v != listener) }
+} */
